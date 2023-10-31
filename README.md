@@ -23,3 +23,18 @@ Host local-vm
 
 Certificate for web: Let'sEncrypt
 https://158.160.35.55.nip.io
+
+DZ4 :
+
+Перенесены в отдельную папку VPN задания с прошлого занятия
+
+testapp_IP = 158.160.37.229
+testapp_port = 9292
+
+Добавлены скрипты по установке ПО и развертыванию ВМ в облаке YC:
+create_reddit_vm.sh
+create_reddit_vm_with_startup_script.sh
+deploy.sh
+install_mongodb.sh
+install_ruby.sh
+startup.sh
