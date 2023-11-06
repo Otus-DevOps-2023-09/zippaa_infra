@@ -1,14 +1,14 @@
-terraform {
-  required_providers {
-    yandex = {
-      source = "yandex-cloud/yandex"
-    }
-  }
-  required_version = ">= 0.13"
-}
+# terraform {
+#   required_providers {
+#     yandex = {
+#       source = "yandex-cloud/yandex"
+#     }
+#   }
+#   required_version = ">= 0.13"
+# }
 
 provider "yandex" {
-  //  token     = "y0_AgAAAAAEGNOMAATuwQAAAADwkon6yhCowTWfS0ulIxBmqjRGuyzhuFs"
+#  token     = "y0_AgAAAAAEGNOMAATuwQAAAADwkon6yhCowTWfS0ulIxBmqjRGuyzhuFs"
   service_account_key_file = var.service_account_key_file
   cloud_id                 = var.cloud_id
   folder_id                = var.folder_id
@@ -45,7 +45,7 @@ resource "yandex_compute_instance" "app" {
 
   connection {
     type = "ssh"
-    //    host  = yandex_compute_instance.app.network_interface.0.nat_ip_address
+#    host  = yandex_compute_instance.app.network_interface.0.nat_ip_address
     host  = self.network_interface.0.nat_ip_address
     user  = "ubuntu"
     agent = false
