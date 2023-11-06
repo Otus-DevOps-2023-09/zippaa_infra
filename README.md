@@ -49,3 +49,15 @@ yc compute instance create \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
   --metadata serial-port-enable=1 \
   --metadata-from-file user-data=yc-data.yaml
+
+
+DZ6 terraform-1:
+ Установил и настроил terraform  для работы с YC
+ создал новую сервисную УЗ для терраформ и получил токен и кеу для дальнейшей работы
+ создал  main.tf output.tf variables.tf terraform.tfvars
+ скопировал с предыдущего задания скрипты по установке
+ сделал переменные для main.tf
+ настроил балансировщик (не оч хорошее по моему мнению решение - работает как roundrobin, а хотелось бы еще какие то параметры как в HAproxy,  да и если делать балансировщик то лучше отдельную ВМ на которой будет либо Nginx либо HAproxy)
+ добавил .gitignore
+ сделал terraform fmt  оч класная вещь:)
+ terraform destroy. В итоге все по заданию выполнено.
