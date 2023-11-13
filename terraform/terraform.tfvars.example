@@ -1,0 +1,9 @@
+public_key               = "~/.ssh/id_rsa.pub"
+private_key              = "~/.ssh/id_rsa"
+cloud_id                 = "b1gtsxxxxxxxxxxxxxxx"
+folder_id                = "b1gl88axxxxxxxxxxxxb"
+zone                     = "ru-central1-a"
+image_id                 = "fd8bd2vxxxxxxxxxxxa"
+subnet_id                = "e9b036sxxxxxxxxxxxx"
+service_account_key_file = "terraform-key.json"
+vm_count                 = 2
